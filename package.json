@@ -11,5 +11,10 @@
     "heroku"
   ],
   "author": "0m3rF",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "express": "^4.14.1",
+    "mongodb": "^2.2.24"
+  }
 }
