@@ -40,7 +40,12 @@ app.post('/getRecord',function (req,res) {
 
 		 	collection.find({'key': req.body.key},{_id:0}).toArray(function(err, docs) {
 		    
-		    res.send(docs[0]);
+		    if(docs[0] == null)
+		    {
+		    	res.send("Kayit bulunamadi!");
+		    }
+		    else
+		    	res.send(docs[0]);
 		    db.close();
 
 		  });      
